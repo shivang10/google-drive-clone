@@ -3,6 +3,7 @@ import './App.css';
 import Header from "./components/header/index";
 import Sidebar from "./components/sideBar/index";
 import FilesView from "./components/filesView/filesView";
+import SideBarIcons from "./components/sideIcons";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
             <div className="app__main">
                 <Sidebar/>
                 <FilesView/>
+                <SideBarIcons />
             </div>
         </div>
     );
