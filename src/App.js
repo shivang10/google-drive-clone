@@ -1,7 +1,8 @@
 import {useState} from 'react';
 import './App.css';
 import Header from "./components/header/index";
-import Sidebar from  "./components/sideBar/index";
+import Sidebar from "./components/sideBar/index";
+import FilesView from "./components/filesView/filesView";
 
 function App() {
 
@@ -15,7 +16,10 @@ function App() {
     return (
         <div className="App">
             <Header userPhoto={user.photoURL}/>
-            <Sidebar />
+            <div className="app__main">
+                <Sidebar/>
+                <FilesView/>
+            </div>
         </div>
     );
 }
