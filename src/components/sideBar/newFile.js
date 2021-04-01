@@ -66,6 +66,11 @@ const NewFile = () => {
                         setOpen(false);
                         setFile(null)
                     })
+
+                storage.ref("files").child(file.name).getMetadata().then(meta => {
+                    console.log(meta.size);
+                })
+
             })
     }
 
